@@ -1,1 +1,7 @@
-# Hierarhical_Organization_Patents
+# Hiearchical Organization of Patent Data
+The following project is an Ipython notebook for a code-along using a Kaggle patent dataset. The project overview is described below.
+
+## Objective
+While search engines offer a convenient way to search patents, patent data stored in large CSV files often occupy a significant amount of disk space and contain a significant amount of text, oftentimes metadata that seems esoteric to novice users and cannot be easily incorporated into machine learning models. One such example is using the International Patent Classification (IPC) alphabetical nomenclature; while this alphanumeric system effectively categorizes the field of a patent, it would be more helpful to explicitly specify the field and to partition the data based on such field(s), e.g., chemistry and physics patents.
+
+The following project is a data pipeline that aims to facilitate patent data organization and storage. Specifically, a Kaggle patent dataset is stored in a public S3 bucket; using AWS IAM credentials, combined with PySpark and pandas modules, the data pipeline normalizes the Kaggle patent dataset (see below), maps the IPC classification using a manually annotated IPC classification definition set (see below) and organizes the patent entries into parquet files stored on an S3 bucket. The final product is a paritioned dataset that can be seamlessly incorporated with big data frameworks such as Hadoop. While beyond the scope of this project, this reorganized and partitioned dataset could greatly facilitate machine learning and natural language processing applications.

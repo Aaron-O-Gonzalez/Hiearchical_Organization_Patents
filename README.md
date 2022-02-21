@@ -1,5 +1,5 @@
 # Hiearchical Organization of Patent Data
-The following project is an Ipython notebook for a code-along using a Kaggle patent dataset. The project overview is described below.
+The following project is an Ipython notebook for a code-along using a Kaggle patent dataset. The project objectives are described below.
 
 ## Objective
 While search engines offer a convenient way to search patents, patent data stored in large CSV files often occupy a significant amount of disk space and contain a significant amount of text, oftentimes metadata that seems esoteric to novice users and cannot be easily incorporated into machine learning models. One such example is using the International Patent Classification (IPC) alphabetical nomenclature; while this alphanumeric system effectively categorizes the field of a patent, it would be more helpful to explicitly specify the field and to partition the data based on such field(s), e.g., chemistry and physics patents.
